@@ -1,0 +1,60 @@
+Please see the REST API Example as follows: [a link]https://developer.atlassian.com/cloud/confluence/rest-api-examples/
+
+Set global credentials: Your username and password as a username and password type credential, and the page id as a secrete text credential. My pipeline for update a Confluence page is:
+
+pipeline {
+    agent any
+    environment {
+      CONFLUENCE_PAGE_CREDS = credentials('confluence-creds')
+      PAGE_ID = credentials('confluence-page-id')
+    }
+    stages {
+        stage('Update Confluence Page') {
+            steps {
+                sh '''
+                    #!/bin/bash
+                    curl -u ${CONFLUENCE_PAGE_CREDS} 'https://herzog.atlassian.net/wiki/rest/api/content/'${PAGE_ID}'?expand=version' | python -mjson.tool > version.txt
+                    PAGE_VERSION=$(grep -Po '(?<="number": )[0-9]+' version.txt)
+                    rm version.txt
+                    PAGE_VERSION=$((PAGE_VERSION+1))
+                    curl -u ${CONFLUENCE_PAGE_CREDS} 'https://herzog.atlassian.net/wiki/rest/api/content/'${PAGE_ID}'?expand=body.storage' | python -mjson.tool > body.txt
+                    more body.txt
+                    PAGE_BODY="$(grep -Po '(?<="value": ")[^"]+' body.txt)"
+                    rm body.txt
+                    TEXT='<p><br /></p><p>Release Version: '${BUILD_TIMESTAMP}'</p><p>#!/bin/sh</p><p>PKGPATH=\\"/home/admin_user/BOS-'${BUILD_TIMESTAMP}'-Release-package\\"</p><p>docker container stop platinumpigeon || true</p><p>docker container rm platinumpigeon || true</p>'
+                    TEXT=$TEXT'docker run --name platinumpigeon --env-file \$PKGPATH/env.list --network bos --restart unless-stopped --log-driver json-file --log-opt max-size=10m --log-opt max-file=3 -v \$PKGPATH/log/:/opt/wildfly/standalone/log/ -v \$PKGPATH/keyfiles/:/opt/wildfly/standalone/configuration/keyfiles/ -p 80:80 -p 9990:9990 -p 443:443 -p 8787:8787 -p 9993:9993 -d -t ubuntu-xenial-java-wildfly-phb-'${BUILD_TIMESTAMP}'-snapshot'
+                    TEXT=$PAGE_BODY$TEXT
+                    echo '{"id":"'${PAGE_ID}'","type":"page","title":"BOS Release Script","space":{"key":"TR"},"body":{"storage":{"value":"'$TEXT'","representation":"storage"}},"version":{"number":'$PAGE_VERSION'}}' > update.json
+                    curl -u ${CONFLUENCE_PAGE_CREDS} -X PUT -H 'Content-Type: application/json' -d '@update.json' https://herzog.atlassian.net/wiki/rest/api/content/${PAGE_ID} | python -mjson.tool
+                    rm update.json
+                '''
+            }
+        }
+    }
+}
+
+
+pipeline {
+    agent any
+    environment {
+      CONFLUENCE_PAGE_CREDS = credentials('confluence-creds')
+      PAGE_ID = credentials('confluence-page-id')
+    }
+    stages {
+        stage('Update Confluence Page') {
+            steps {
+                sh '''
+                    #!/bin/bash
+                    TEXT='<p>#!/bin/sh</p><p>PKGPATH=\\"/home/admin_user/BOS-'${BUILD_TIMESTAMP}'-Release-package\\"</p><p>docker container stop platinumpigeon || true</p><p>docker container rm platinumpigeon || true</p>'
+                    echo $TEXT
+                    TEXT=$TEXT'<p>docker run --name platinumpigeon --env-file \$PKGPATH/env.list --network bos --restart unless-stopped --log-driver json-file --log-opt max-size=10m --log-opt max-file=3 -v \$PKGPATH/log/:/opt/wildfly/standalone/log/ -v \$PKGPATH/keyfiles/:/opt/wildfly/standalone/configuration/keyfiles/ -p 80:80 -p 9990:9990 -p 443:443 -p 8787:8787 -p 9993:9993 -d -t ubuntu-xenial-java-wildfly-phb-'${BUILD_TIMESTAMP}'-snapshot</p>'
+                    echo $TEXT
+                    echo '{"type":"page","title":"Version '${BUILD_TIMESTAMP}'","ancestors":[{"id":"'${PAGE_ID}'"}],"space":{"key":"TR"},"body":{"storage":{"value":"'$TEXT'","representation":"storage"}}}' > update.json
+                    more update.json
+                    curl -u ${CONFLUENCE_PAGE_CREDS} -X POST -H 'Content-Type: application/json' -d '@update.json' https://herzog.atlassian.net/wiki/rest/api/content/ | python -mjson.tool
+                    rm update.json
+                '''
+            }
+        }
+    }
+}

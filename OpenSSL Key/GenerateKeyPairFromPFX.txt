@@ -1,0 +1,19 @@
+Generate cert.pem and privkey.pem file from .pfx file
+
+1. Generate cert.pem
+openssl pkcs12 -in [yourfile.pfx] -clcerts -nokeys -out [cert.crt]
+openssl x509 -in cert.crt -out cert.pem
+
+2. Generate privkey.pem
+Get private key
+openssl pkcs12 -in [yourfile.pfx] -nocerts -out [drlive.key]
+
+Run the following command to decrypt the private key:
+openssl rsa -in [drlive.key] -out [drlive-decrypted.key]
+
+openssl rsa -in [keyfile-encrypted.key] -outform PEM -out [keyfile-encrypted-pem.key]
+
+Example:
+openssl pkcs12 -in star.herzogtechnologies.com.pfx -nocerts -out star.key
+openssl rsa -in star.key -out star-decrypted.key
+openssl rsa -in star-decrypted.key -outform PEM -out star-privkey.pem

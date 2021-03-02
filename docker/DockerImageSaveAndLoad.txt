@@ -1,0 +1,43 @@
+
+docker save -o output-image.tar tartarus.hti-sys.com:5000/ubuntu-xenial-psycopg2-largo:latest
+docker load -i output-image.tar
+
+docker save -o keycloak-801_keycloak.tar keycloak-801_keycloak:latest
+docker save -o keycloak-801_keycloak_db.tar keycloak-801_keycloak_db:latest
+
+
+docker-compose down
+docker image rm keycloak-801_keycloak
+docker image rm keycloak-801_keycloak_db
+
+docker load -i keycloak-801_keycloak_db.tar
+docker load -i keycloak-801_keycloak.tar
+docker-compose up
+
+
+docker run --name keycloak_db --network kc --restart unless-stopped -d -t  --volumes-from keycloak-database-data keycloak-801_keycloak_db
+
+docker run --name keycloak_test --env-file keycloak_test_env.list --network kc --restart unless-stopped -v log/:/opt/keycloak-8.0.1/standalone/log/ -v configuration/:/opt/keycloak-8.0.1/standalone/configuration/ -v deployments/:/opt/keycloak-8.0.1/standalone/deployments/ -p 80:8088 -p 9990:9990 -p 443:8089 -d -t  keycloak-801_keycloak
+
+
+docker run --name cadt_keycloak_db --network kc --restart unless-stopped -t --volumes-from keycloak-801_keycloak_data keycloak-801_keycloak_db
+
+docker run --name cadt_keycloak --env-file keycloak_env.list --network kc --restart unless-stopped -v log/:/opt/keycloak-8.0.1/standalone/log/ -p 8088:8088 -p 9990:9990 -p 8089:8089 -t keycloak-801_keycloak
+
+docker run --env-file env.list --name phb-bos -v /opt/bos/log/:/opt/wildfly/standalone/log/ -p 8080:8080 -p 9990:9990 -p8443:8443 -p8787:8787 -p9993:9993 -i -t ubuntu-xenial-java-wildfly-phb-2.0 
+
+
+
+docker run --name cadt_keycloak_db --network kc --restart unless-stopped --volumes-from keycloak-database-data -i -t ebab236c65cf
+
+
+docker run --name cadt_keycloak --network kc --env-file keycloak_env.list --restart unless-stopped -v standalone/standalone/configuration/:/opt/keycloak-8.0.1/standalone/configuration/ -p 8088:8088 -p 9990:9990 -p 8089:8089 -i -t 7c73582da448
+
+
+docker run --name cadt_keycloak --env-file keycloak_env.list --restart unless-stopped -v log/:/opt/keycloak-8.0.1/standalone/log/ -v configuration/:/opt/keycloak-8.0.1/standalone/configuration/ -v deployments/:/opt/keycloak-8.0.1/standalone/deployments/ -p 80:8088 -p 9990:9990 -p 443:8089 -d -t  keycloak-801_keycloak
+
+
+docker run -d --name cadt_keycloak_db --network kc --restart unless-stopped e -i -t ebab236c65cf
+
+
+docker run -d --name cadt_keycloak_db --net kc -e POSTGRES_DB=keycloak -e POSTGRES_USER=keycloak -e POSTGRES_PASSWORD=password postgres

@@ -1,0 +1,10 @@
+WITH report AS ( DELETE FROM platinumpigeon.departure_test_report WHERE employee_id = -2 AND train_id = -1 )
+	DELETE FROM platinumpigeon.software_versions WHERE id = (SELECT software_version_id FROM platinumpigeon.departure_test_report WHERE employee_id = -2 AND train_id = -1 AND test_timestamp = (select min(test_timestamp) from platinumpigeon.departure_test_report));
+	
+	
+	F21AE91B2D6AAD6903A78132A23C8FFF
+	
+	31323320576162746563205261696c7761792045
+	
+	1. hzgx-kes upload.py needed to be modified, hzgx.l.hzgx.4048.itc/mdm opk = 31323320576162746563205261696c7761792045
+	2. HZGX TMC OPK needed to be changed.

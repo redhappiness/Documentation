@@ -1,0 +1,14 @@
+https://localhost:9003/import?name=MRL3rdLidarTest2&company=Montan Rail Link&scac=MRL&folders={"input":"MRL 3rd Subdivision","output":"MRL 3rd VTCI"}&options={"file":"08_19_Right_CL360037_1.las"}&queue=lidar
+
+
+https://localhost:9003/import?name=MRL3rdLidarTest3&company=Montan Rail Link&scac=MRL&folders={"input":"MRL 3rd Subdivision","output":"MRL 3rd VTCI"}&options={"lidar":{"file":"08_19_Right_CL360038_1.las"}}&queue=subdiv
+
+
+docker tag dev_vtci_producer tartarus.hti-sys.com:4303/vtci_producer:0.1.0
+docker push tartarus.hti-sys.com:4303/vtci_producer:0.1.0
+
+docker tag dev_vtci_consumer tartarus.hti-sys.com:4303/vtci_consumer:0.1.0
+docker push tartarus.hti-sys.com:4303/vtci_consumer:0.1.0
+
+docker tag dev_rabbitmq tartarus.hti-sys.com:4303/vtci_rabbitmq:0.1.0
+docker push tartarus.hti-sys.com:4303/vtci_rabbitmq:0.1.0

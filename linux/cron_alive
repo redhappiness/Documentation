@@ -1,0 +1,94 @@
+#!/bin/bash
+# Determine if the applications are running.
+# This is done by running ps aux, grepping for the specific application, and storing the string lenght.
+# String length is 0 if it wasn't found, otherwise it is larger than 0.
+FOUNDGREP=$(ps aux | grep '[i]tcm-application-gateway')
+ITCMAGLEN=${#FOUNDGREP}
+FOUNDGREP=$(ps aux | grep '[i]tcm-broker-event-monitor')
+ITCMEMLEN=${#FOUNDGREP}
+FOUNDGREP=$(ps aux | grep '[i]tcm-connection-manager')
+ITCMCMLEN=${#FOUNDGREP}
+FOUNDGREP=$(ps aux | grep '[i]tcm-fragment-receiver')
+ITCMFRLEN=${#FOUNDGREP}
+FOUNDGREP=$(ps aux | grep '[i]tcm-fragment-sender')
+ITCMFSLEN=${#FOUNDGREP}
+FOUNDGREP=$(ps aux | grep '[i]tcm-message-router_REMOTE')
+ITCMRRLEN=${#FOUNDGREP}
+FOUNDGREP=$(ps aux | grep '[i]tcm-message-logger')
+ITCMMLLEN=${#FOUNDGREP}
+FOUNDGREP=$(ps aux | grep '[q]pidd')
+ITCMQPLEN=${#FOUNDGREP}
+
+# Default to false, indicating if it doesn't change then something needs to be checked on
+AGWORKING="false"
+EMWORKING="false"
+CMWORKING="false"
+FRWORKING="false"
+FSWORKING="false"
+RRWORKING="false"
+MLWORKING="false"
+QPWORKING="false"
+
+# If the length is greater than 1, then set the similar variable to true
+if [ $ITCMAGLEN -gt 1 ]
+then
+	AGWORKING="true"
+fi
+
+if [ $ITCMEMLEN -gt 1 ]
+then
+	EMWORKING="true"
+fi
+
+if [ $ITCMCMLEN -gt 1 ]
+then
+	CMWORKING="true"
+fi
+
+if [ $ITCMFRLEN -gt 1 ]
+then
+	FRWORKING="true"
+fi
+
+if [ $ITCMFSLEN -gt 1 ]
+then
+	FSWORKING="true"
+fi
+
+if [ $ITCMRRLEN -gt 1 ]
+then
+	RRWORKING="true"
+fi
+
+if [ $ITCMMLLEN -gt 1 ]
+then
+	MLWORKING="true"
+fi
+
+if [ $ITCMQPLEN -gt 1 ]
+then
+	QPWORKING="true"
+fi
+
+
+# ping_host method take in a ip address and output "true" if the ip is pingable, otherwise return "false"
+ping_host(){ ping -q -c1 $1 >/dev/null; if [ $? -eq 0 ]; then echo "true"; else echo "false"; fi; }
+
+# Ip addresses of TMC CPUs and CDUs are hard coded.
+#TMC_CPU_1=$(ping_host "10.255.255.11")
+#TMC_CPU_2=$(ping_host "10.255.255.12")
+#TMC_CPU_3=$(ping_host "10.255.255.13")
+#CDU_PRIMARY=$(ping_host "10.255.255.10")
+#CDU_SECONDARY=$(ping_host "10.255.255.9")
+
+TMC_CPU_1="true"
+TMC_CPU_2="true"
+TMC_CPU_3="true"
+CDU_PRIMARY="true"
+CDU_SECONDARY="false"
+
+#10.255.255.122 is the ip address that the Ovoo server sits on
+echo "{\"loco_id\":\"TEST  1234\",\"slot10_status\":\"alive\",\"wifi_status\":\"unknown\",\"timestamp\":\"$(date -u)\",\"application_gateway_running\":$AGWORKING,\"event_manager_running\":$EMWORKING,\"connection_manager_running\":$CMWORKING,\"fragment_receiver_running\":$FRWORKING,\"fragment_sender_running\":$FSWORKING,\"message_logger_running\":$MLWORKING,\"message_router_remote_running\":$RRWORKING,\"qpid_running\":$QPWORKING,\"tmc_cpu_1_ping\":$TMC_CPU_1,\"tmc_cpu_2_ping\":$TMC_CPU_2,\"tmc_cpu_3_ping\":$TMC_CPU_3,\"cdu_primary_ping\":$CDU_PRIMARY,\"cdu_secondary_ping\":$CDU_SECONDARY}" | nc -u 192.168.99.100 3000
+
+
+
