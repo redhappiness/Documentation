@@ -1,0 +1,60 @@
+{"access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJqMjNISGRGcEp3bWxqek1RdE5XSkhKTE12bk04UGlYd1dpTnRndHJEZGJrIn0.eyJqdGkiOiI1MGRkM2NiNy0yOThmLTQzMjEtYTM4Yi1kNzQ0NmM4MzgwMmQiLCJleHAiOjE2MTQyMDYzMDgsIm5iZiI6MCwiaWF0IjoxNjE0MjA2MDA4LCJpc3MiOiJodHRwczovL2tleWNsb2FrOjgwODkvYXV0aC9yZWFsbXMvUHJvZHVjdGlvbiIsImF1ZCI6IlZUQyIsInN1YiI6IjMyYzk5NWRiLTQzNWMtNGJhOS04MmMzLThkMzIxYzU0Yjg1YyIsInR5cCI6IkJlYXJlciIsImF6cCI6IlZUQyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImZlMWRlOGIzLWY5MzEtNDkyMC1iYzE3LTRjMDAxODIxNWI4MyIsImFjciI6IjEiLCJjbGllbnRfc2Vzc2lvbiI6IjViZWNiYWFlLTQ3ZTctNDAyYi05M2ZkLTcyMjYxOTkwNmE0ZCIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL3Z0Yy1xYS5odGktc3lzLmNvbSIsImh0dHBzOi8vbG9jYWxob3N0OjkwMDMiLCJodHRwczovL2xvY2FsaG9zdDo4NTY3Il0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7IlZUQyI6eyJyb2xlcyI6WyJsaW5lYnVpbGRlciJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwicGVybWlzc2lvbnMiOlsibGluZWJ1aWxkZXIiXSwibmFtZSI6IkplZmYgQnVybmV0dCIsInByZWZlcnJlZF91c2VybmFtZSI6ImplZmYiLCJnaXZlbl9uYW1lIjoiSmVmZiIsImZhbWlseV9uYW1lIjoiQnVybmV0dCIsImVtYWlsIjoiamJ1cm5ldHRAaGVyem9nLmNvbSJ9.g3vPCUFl7ygIMe5QTqMkIVpq28MVLt5zrnYqsortm--iPvd83xUsvq6xzzArFxJGm7-NesjGYG1HkW217BYLOA8fDUN07bMr7xMC7GcKrdW0kd-CMu4kZ3l2HgcwWiUsqI4-uFjUmCzRzr1_NYnPmYluSc38gijFpZOfhzpn9UwTajt1RjiM9jxXxqPhhnX4IZ0CPWFeGQhn-K3FIZZHWCaxwId_k4lxrVTxN0QizELeEXkw2cxGXfwxsKL9KFCl7Y-Wd4kYt4b2QqAZhQgtuIiDGFZ6qz9p7nOkR5-0eh8hHVzMeGttJ1m4cLlMRD2B_paAk-WyaWHh8dLplMQf-w", "expires_in": 300, "refresh_expires_in": 1800, "refresh_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJqMjNISGRGcEp3bWxqek1RdE5XSkhKTE12bk04UGlYd1dpTnRndHJEZGJrIn0.eyJqdGkiOiI4YmQ0OGIwNS1lNmU3LTQ1MDEtOTRkYS03NDNiMTVmNTM3ZDYiLCJleHAiOjE2MTQyMDc4MDgsIm5iZiI6MCwiaWF0IjoxNjE0MjA2MDA4LCJpc3MiOiJodHRwczovL2tleWNsb2FrOjgwODkvYXV0aC9yZWFsbXMvUHJvZHVjdGlvbiIsImF1ZCI6IlZUQyIsInN1YiI6IjMyYzk5NWRiLTQzNWMtNGJhOS04MmMzLThkMzIxYzU0Yjg1YyIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJWVEMiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiJmZTFkZThiMy1mOTMxLTQ5MjAtYmMxNy00YzAwMTgyMTViODMiLCJjbGllbnRfc2Vzc2lvbiI6IjViZWNiYWFlLTQ3ZTctNDAyYi05M2ZkLTcyMjYxOTkwNmE0ZCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7IlZUQyI6eyJyb2xlcyI6WyJsaW5lYnVpbGRlciJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fX0.lY4TAEUxLcvvn-3y6XHoHZDEgFG7CnCQlBptRKA6Y48CQIOr4-Mo0NymPeYGtKhEXKOm2WyfdSzQg_SXpvfooCqYWOEb4_iUMWrBK1y5R2rKbUz-Z-XM5VrjyDbUP-Gr60LQyf0Ih2z8TiVJlCqwOVjuOfdDaZrmmWupfJVr7aKYoQtt-KKmrlgHoKV1UUz8OLme3Jjui_n1OP9uNkvHjWKOU7cnjq9FMKpytyrUiDnEsfecKwqwGgK4gXR8f86WU3-zt8hnqvAWkAK65aQRf-3IerIvcZS4H4GWUbSU0XqvTTot_cNUgkgPYuHoCwFxbH-40qHTEm9fQAJCKIOG7Q", "token_type": "bearer", "id_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJqMjNISGRGcEp3bWxqek1RdE5XSkhKTE12bk04UGlYd1dpTnRndHJEZGJrIn0.eyJqdGkiOiI4NTA5NzhjMi1kYTZjLTQxZGUtOWIxOS04ZGRkZTZjNTQxNDYiLCJleHAiOjE2MTQyMDYzMDgsIm5iZiI6MCwiaWF0IjoxNjE0MjA2MDA4LCJpc3MiOiJodHRwczovL2tleWNsb2FrOjgwODkvYXV0aC9yZWFsbXMvUHJvZHVjdGlvbiIsImF1ZCI6IlZUQyIsInN1YiI6IjMyYzk5NWRiLTQzNWMtNGJhOS04MmMzLThkMzIxYzU0Yjg1YyIsInR5cCI6IklEIiwiYXpwIjoiVlRDIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZmUxZGU4YjMtZjkzMS00OTIwLWJjMTctNGMwMDE4MjE1YjgzIiwiYWNyIjoiMSIsInBlcm1pc3Npb25zIjpbImxpbmVidWlsZGVyIl0sIm5hbWUiOiJKZWZmIEJ1cm5ldHQiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqZWZmIiwiZ2l2ZW5fbmFtZSI6IkplZmYiLCJmYW1pbHlfbmFtZSI6IkJ1cm5ldHQiLCJlbWFpbCI6ImpidXJuZXR0QGhlcnpvZy5jb20ifQ.OhbGYhQLkBnls-cEFS1PI0PZIx_cVmxxTqB1-WxIAdvRNCJu1c6i7s8S941hWuZY0RY3jqB2Y8HZT624lTI3oSafpr8Pz-FJof4sYwDh7ZlFADPjNH4tkgUOEsIq8VquIDfbVPMxRXTp_-uNeH2qUV3ROmL49HPeG1LDZrpuPSPFRfAleH0CMQXeGQM9W6GRFQ5YPK-7ljGOb1cYrGHtppy1OQr74b5pL9964cCFovx5ScJPmU9OnjIIi6iG7rDJYPqowfArsU5HPkHzAaTeipnx2VkhsUBEdmdm2inCeVjDsc9s5_x996eDh4WS6wgZdRPWFVjv2qjfIfqgLEQ2Lw", "not-before-policy": 0, "session_state": "fe1de8b3-f931-4920-bc17-4c0018215b83"}
+
+
+
+GET /?code=Pz2y6gwLug6opD0zBxNFjKiH-3vuG_ZWGe1HBeZp--4.3d74a4ed-df21-4a78-9425-8e0e313622be
+
+{"sub": "32c995db-435c-4ba9-82c3-8d321c54b85c", "permissions": ["linebuilder"], "preferred_username": "jeff", "given_name": "Jeff", "family_name": "Burnett", "email": "jburnett@herzog.com"}
+
+http://localhost:9003/import?name=MRL3rdTest&company=Montan Rail Link&scac=MRL&folders={"input":”MRL 3rd Subdivision","output":"MRL 3rd VTCI"}&options={"file":"08_19_Right_CL360037_1.las"}&queue=lidar
+
+Import:
+
+http://localhost:9003/import?name=SUBDIV_NAME&company=COMPANY_NAME&scac=SCAC&folders={"input":”SUBDIV_FOLDER","output":"IGNORED_FOLDER"}&options={"lidar":{"file":"FILENAME.LAS"}}&queue=subdiv
+
+
+Example: https://localhost:9003/import?name=MRL​​​​​​​ 3rd Subdivision&company=VTCI&scac=VTCI&folders={​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​"input":"MRL 3rd Subdivision","output":"MRL 3 VTCI"}​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​&options={​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​"route":{​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​"features":"bridge,pedestriancrossing,privatecrossing,publiccrossing,overpass,platform,signaldecreasing,signalincreasing,speed,tunnel"}​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​}​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​&queue=subdiv 
+
+
+https://localhost:9003/import?name=MRLMainTest&company=MontanaRailLink&scac=MRL&folders={"input":"MRL 3rd Subdivision","output":"MRL 3rd VTCI"}&options={"file":"20200818_152833_NF.mp4","imagery_type":"forward","video_quality":"low","camera_type":"blackvue"}&queue=video
+
+
+vtci_consumer_video     | [swscaler @ 0x565076c1c640] deprecated pixel format used, make sure you did set range correctly
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] using SAR=1/1
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] profile High, level 4.0
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=3 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=1 b_pyramid=0 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=2 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=9 rc=cbr mbtree=1 bitrate=12607 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=12607 vbv_bufsize=4000 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+vtci_consumer_video     | Output #0, mp4, to '/tmp/tmp89dsnwnl/20200818_152833_NF_12607.mp4':
+vtci_consumer_video     |   Metadata:
+vtci_consumer_video     |     compatible_brands: mp42mp42
+vtci_consumer_video     |     major_brand     : mp42
+vtci_consumer_video     |     minor_version   : 1
+vtci_consumer_video     |     encoder         : Lavf58.29.100
+vtci_consumer_video     |     Stream #0:0(eng): Video: h264 (libx264) (avc1 / 0x31637661), yuvj420p(pc), 1920x1080 [SAR 1:1 DAR 16:9], q=-1--1, 12607 kb/s, 30 fps, 15360 tbn, 30 tbc (default)
+vtci_consumer_video     |     Metadata:
+vtci_consumer_video     |       creation_time   : 2020-08-18T19:29:33.000000Z
+vtci_consumer_video     |       handler_name    : PittaSoft Video Media Handler
+vtci_consumer_video     |       encoder         : Lavc58.54.100 libx264
+vtci_consumer_video     |     Side data:
+vtci_consumer_video     |       cpb: bitrate max/min/avg: 12607000/0/12607000 buffer size: 4000000 vbv_delay: -1
+vtci_consumer_video     |     Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 47 kb/s (default)
+vtci_consumer_video     |     Metadata:
+vtci_consumer_video     |       creation_time   : 2020-08-18T19:29:33.000000Z
+vtci_consumer_video     |       handler_name    : PittaSoft Sound Media Handler
+vtci_consumer_video     | frame=    9 fps=0.0 q=0.0 size=       0kB time=00:00:00.32 bitrate=   1.2kbits/s speed=0.564x [mp4 @ 0x565076214340] Starting second pass: moving the moov atom to the beginning of the file
+vtci_consumer_video     | frame= 1830 fps= 16 q=-1.0 Lsize=   94413kB time=00:01:00.99 bitrate=12680.8kbits/s speed=0.518x
+vtci_consumer_video     | video:94037kB audio:351kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.025431%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] frame I:915   Avg QP:25.88  size: 92925
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] frame P:915   Avg QP:31.58  size: 12314
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] mb I  I16..4: 20.7% 61.9% 17.4%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] mb P  I16..4:  2.2%  2.7%  0.5%  P16..4: 19.2%  7.7%  3.9%  0.0%  0.0%    skip:63.7%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] 8x8 transform intra:61.3% inter:72.1%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] coded y,uvDC,uvAC intra: 48.9% 40.0% 6.9% inter: 6.7% 4.0% 0.0%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] i16 v,h,dc,p: 21% 25% 10% 44%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 19% 22%  6%  5%  4%  5%  6%  8%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 23% 13%  5% 10%  5%  6%  5%  7%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] i8c dc,h,v,p: 63% 21% 14%  2%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] Weighted P-Frames: Y:0.0% UV:0.0%
+vtci_consumer_video     | [libx264 @ 0x5650761f1080] kb/s:12628.65
+vtci_consumer_video     | {'error': "[Errno 2] No such file or directory: '/home/bento4/Bento4-SDK-1-6-0-637.x86_64-unknown-linux/bin/mp4hls'"}
+Gracefully stopping... (press Ctrl+C again to force)
