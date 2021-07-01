@@ -4,11 +4,47 @@ https://localhost:9003/import?name=MRL3rdLidarTest2&company=Montan Rail Link&sca
 https://localhost:9003/import?name=MRL3rdLidarTest3&company=Montan Rail Link&scac=MRL&folders={"input":"MRL 3rd Subdivision","output":"MRL 3rd VTCI"}&options={"lidar":{"file":"08_19_Right_CL360038_1.las"}}&queue=subdiv
 
 
-docker tag dev_vtci_producer tartarus.hti-sys.com:4303/vtci_producer:0.1.0
-docker push tartarus.hti-sys.com:4303/vtci_producer:0.1.0
+docker tag dev_vtci_producer tartarus.hti-sys.com:4303/vtci_producer:1.0.1.dev
+docker push tartarus.hti-sys.com:4303/vtci_producer:1.0.1.dev
 
-docker tag dev_vtci_consumer tartarus.hti-sys.com:4303/vtci_consumer:0.1.0
-docker push tartarus.hti-sys.com:4303/vtci_consumer:0.1.0
+docker tag dev_vtci_consumer_lidar tartarus.hti-sys.com:4303/vtci_consumer:1.0.1.dev
+docker push tartarus.hti-sys.com:4303/vtci_consumer:1.0.1.dev
 
-docker tag dev_rabbitmq tartarus.hti-sys.com:4303/vtci_rabbitmq:0.1.0
-docker push tartarus.hti-sys.com:4303/vtci_rabbitmq:0.1.0
+docker tag dev_rabbitmq tartarus.hti-sys.com:4303/vtci_rabbitmq:1.0.1.dev
+docker push tartarus.hti-sys.com:4303/vtci_rabbitmq:1.0.1.dev
+
+/mnt/VTCTesting
+ /media/vtc-output
+
+
+//hti-sys-qnap2.hti-sys.com/GIS/VTC\040Testing/Import /mnt/TESTING
+//hti-sys-qnap2.hti-sys.com/GIS/VTC\040Testing/Output /media/vtci-testing
+
+
+docker pull tartarus.hti-sys.com:5000/rdaly/dual-training
+docker pull tartarus.hti-sys.com:5000/rdaly/yolo-training
+
+
+docker pull tartarus.hti-sys.com:4303/vtci_consumer:0.2.1
+
+
+[2:57 PM] Ryan Daly
+    It's basically the intersection of both 359 and 372.
+​[2:57 PM] Ryan Daly
+    If you look inside the docker-debug-yolo, for example, you'll see the docker -v options...
+​[2:58 PM] Ryan Daly
+    The volume is currently mounted via sshfs using the docker ssh volume extension, which we won't be using anymore.
+​[2:58 PM] Ryan Daly
+    So what we need to do now is to mount the directories locally on the VM (ut-training.hti-sys.com) somewhere so it can be mounted inside the containers.
+​[2:58 PM] Ryan Daly
+    Using cifs...
+​[2:59 PM] Ryan Daly
+    This would be very similar to what we do on the VTC QA VMs.
+​[2:59 PM] Ryan Daly
+    You would edit /etc/fstab.
+​[3:00 PM] Ryan Daly
+    The new address is on the Ultrasonic share at \\172.50.0.140\utdata.
+​[3:00 PM] Ryan Daly
+    YOLO is at \\172.50.0.140\utdata\yolo and comparison is at \\172.50.0.140\utdata\dual.
+(1 liked)​[3:01 PM] Ryan Daly
+    apt install cifs-utils on ut-training.hti-sys.com

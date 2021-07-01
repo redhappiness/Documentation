@@ -1,0 +1,7 @@
+Trino API
+Open source JDBC connector
+Starburst -> ODBC connector
+
+HCA allow users to get a a kml comparision
+HCA report data and revenue to POWERBI
+

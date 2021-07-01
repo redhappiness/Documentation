@@ -1,0 +1,132 @@
+vg loss, 0.000261 rate, 0.120872 seconds, 1579584 images, 0.364549 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000051 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000008, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000024, iou_loss = 0.000000, total_loss = 0.000024
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.609415, GIOU: 0.570990), Class: 0.999243, Obj: 0.690935, No Obj: 0.001766, .5R: 0.764706, .75R: 0.352941, count: 51, class_loss = 1.035065, iou_loss = 50.957947, total_loss = 51.993011
+ total_bbox = 5757568, rewritten_bbox = 4.860368 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000003, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000006, iou_loss = 0.000000, total_loss = 0.000006
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.655092, GIOU: 0.629069), Class: 0.999248, Obj: 0.622543, No Obj: 0.002173, .5R: 0.828571, .75R: 0.400000, count: 70, class_loss = 1.674778, iou_loss = 65.569099, total_loss = 67.243874
+ total_bbox = 5757638, rewritten_bbox = 4.860361 %
+
+ Tensor Cores are used.
+
+ 49363: 0.678273, 0.517994 avg loss, 0.000261 rate, 0.122651 seconds, 1579616 images, 0.364477 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000049 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000008, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000102, iou_loss = 0.000000, total_loss = 0.000102
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.641265, GIOU: 0.617606), Class: 0.999427, Obj: 0.739812, No Obj: 0.001386, .5R: 0.780488, .75R: 0.414634, count: 41, class_loss = 0.742405, iou_loss = 52.790890, total_loss = 53.533295
+ total_bbox = 5757679, rewritten_bbox = 4.860361 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.603119, GIOU: 0.568102), Class: 0.999503, Obj: 0.718628, No Obj: 0.002000, .5R: 0.700000, .75R: 0.271429, count: 70, class_loss = 1.115601, iou_loss = 83.473305, total_loss = 84.588905
+ total_bbox = 5757749, rewritten_bbox = 4.860406 %
+
+ Tensor Cores are used.
+
+ 49364: 0.465353, 0.512730 avg loss, 0.000261 rate, 0.121613 seconds, 1579648 images, 0.364458 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000046 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.609805, GIOU: 0.580538), Class: 0.999389, Obj: 0.664152, No Obj: 0.002158, .5R: 0.760563, .75R: 0.267606, count: 71, class_loss = 1.448666, iou_loss = 64.895782, total_loss = 66.344452
+ total_bbox = 5757820, rewritten_bbox = 4.860416 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.529679, GIOU: 0.493942), Class: 0.990682, Obj: 0.015893, No Obj: 0.000003, .5R: 1.000000, .75R: 0.000000, count: 1, class_loss = 0.060535, iou_loss = 0.016850, total_loss = 0.077385
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.627040, GIOU: 0.594390), Class: 0.999335, Obj: 0.765585, No Obj: 0.001528, .5R: 0.809524, .75R: 0.285714, count: 42, class_loss = 0.831718, iou_loss = 51.068321, total_loss = 51.900040
+ total_bbox = 5757863, rewritten_bbox = 4.860466 %
+
+ Tensor Cores are used.
+
+ 49365: 0.586579, 0.520115 avg loss, 0.000261 rate, 0.122055 seconds, 1579680 images, 0.364408 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000046 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000015, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000465, iou_loss = 0.000000, total_loss = 0.000465
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.719597, GIOU: 0.703880), Class: 0.999437, Obj: 0.666702, No Obj: 0.001566, .5R: 0.913043, .75R: 0.456522, count: 46, class_loss = 0.995863, iou_loss = 48.618546, total_loss = 49.614410
+ total_bbox = 5757909, rewritten_bbox = 4.860428 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000002, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000001, iou_loss = 0.000000, total_loss = 0.000001
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.707936, GIOU: 0.692440), Class: 0.999462, Obj: 0.740532, No Obj: 0.002010, .5R: 0.894737, .75R: 0.473684, count: 57, class_loss = 0.919909, iou_loss = 65.267914, total_loss = 66.187820
+ total_bbox = 5757966, rewritten_bbox = 4.860397 %
+
+ Tensor Cores are used.
+
+ 49366: 0.479686, 0.516072 avg loss, 0.000261 rate, 0.121766 seconds, 1579712 images, 0.364372 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000063 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000016, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000295, iou_loss = 0.000000, total_loss = 0.000295
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.628309, GIOU: 0.595510), Class: 0.998938, Obj: 0.683784, No Obj: 0.002070, .5R: 0.723077, .75R: 0.307692, count: 65, class_loss = 1.321613, iou_loss = 107.921608, total_loss = 109.243217
+ total_bbox = 5758031, rewritten_bbox = 4.860394 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.747028, GIOU: 0.735267), Class: 0.999206, Obj: 0.667872, No Obj: 0.001911, .5R: 0.981132, .75R: 0.528302, count: 53, class_loss = 1.235975, iou_loss = 63.733814, total_loss = 64.969788
+ total_bbox = 5758084, rewritten_bbox = 4.860349 %
+
+ Tensor Cores are used.
+
+ 49367: 0.640154, 0.528480 avg loss, 0.000261 rate, 0.122339 seconds, 1579744 images, 0.364327 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000046 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000002, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000001, iou_loss = 0.000000, total_loss = 0.000001
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.635111, GIOU: 0.612218), Class: 0.999452, Obj: 0.723870, No Obj: 0.001470, .5R: 0.787234, .75R: 0.361702, count: 47, class_loss = 0.794378, iou_loss = 51.829838, total_loss = 52.624214
+ total_bbox = 5758131, rewritten_bbox = 4.860379 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.582879, GIOU: 0.533728), Class: 0.999352, Obj: 0.759685, No Obj: 0.001619, .5R: 0.714286, .75R: 0.267857, count: 56, class_loss = 0.734460, iou_loss = 51.116264, total_loss = 51.850723
+ total_bbox = 5758187, rewritten_bbox = 4.860436 %
+
+ Tensor Cores are used.
+
+ 49368: 0.383065, 0.513939 avg loss, 0.000261 rate, 0.121015 seconds, 1579776 images, 0.364299 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000048 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.702611, GIOU: 0.687768), Class: 0.999514, Obj: 0.722222, No Obj: 0.001596, .5R: 0.940000, .75R: 0.400000, count: 50, class_loss = 0.799699, iou_loss = 61.604511, total_loss = 62.404209
+ total_bbox = 5758237, rewritten_bbox = 4.860411 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000019, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000177, iou_loss = 0.000000, total_loss = 0.000177
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.654454, GIOU: 0.627801), Class: 0.999493, Obj: 0.743655, No Obj: 0.002110, .5R: 0.782609, .75R: 0.420290, count: 69, class_loss = 0.860620, iou_loss = 90.656075, total_loss = 91.516693
+ total_bbox = 5758306, rewritten_bbox = 4.860405 %
+
+ Tensor Cores are used.
+
+ 49369: 0.415827, 0.504128 avg loss, 0.000261 rate, 0.122689 seconds, 1579808 images, 0.364232 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000051 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.694226, GIOU: 0.678610), Class: 0.999384, Obj: 0.755724, No Obj: 0.002158, .5R: 0.857143, .75R: 0.476191, count: 63, class_loss = 1.053171, iou_loss = 71.381866, total_loss = 72.435036
+ total_bbox = 5758369, rewritten_bbox = 4.860421 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.666736, GIOU: 0.644826), Class: 0.999500, Obj: 0.713338, No Obj: 0.002139, .5R: 0.830769, .75R: 0.400000, count: 65, class_loss = 1.145949, iou_loss = 61.346107, total_loss = 62.492058
+ total_bbox = 5758434, rewritten_bbox = 4.860384 %
+
+ Tensor Cores are used.
+
+ 49370: 0.550479, 0.508763 avg loss, 0.000261 rate, 0.122962 seconds, 1579840 images, 0.364215 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000047 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.676928, GIOU: 0.658414), Class: 0.999467, Obj: 0.756756, No Obj: 0.002061, .5R: 0.820895, .75R: 0.373134, count: 67, class_loss = 0.867707, iou_loss = 83.988770, total_loss = 84.856476
+ total_bbox = 5758501, rewritten_bbox = 4.860397 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000002, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.623034, GIOU: 0.587936), Class: 0.999466, Obj: 0.780043, No Obj: 0.002073, .5R: 0.836066, .75R: 0.295082, count: 61, class_loss = 0.860345, iou_loss = 68.692413, total_loss = 69.552757
+ total_bbox = 5758562, rewritten_bbox = 4.860415 %
+
+ Tensor Cores are used.
+
+ 49371: 0.432779, 0.501164 avg loss, 0.000261 rate, 0.123892 seconds, 1579872 images, 0.364205 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000054 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000005, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000019, iou_loss = 0.000000, total_loss = 0.000019
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.654711, GIOU: 0.622619), Class: 0.999479, Obj: 0.691425, No Obj: 0.001953, .5R: 0.783333, .75R: 0.300000, count: 60, class_loss = 1.063169, iou_loss = 84.735695, total_loss = 85.798866
+ total_bbox = 5758622, rewritten_bbox = 4.860399 %
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.000000, GIOU: 0.000000), Class: 0.000000, Obj: 0.000000, No Obj: 0.000001, .5R: 0.000000, .75R: 0.000000, count: 1, class_loss = 0.000000, iou_loss = 0.000000, total_loss = 0.000000
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 37 Avg (IOU: 0.635660, GIOU: 0.605714), Class: 0.999117, Obj: 0.743534, No Obj: 0.001637, .5R: 0.796296, .75R: 0.314815, count: 54, class_loss = 0.785467, iou_loss = 65.326088, total_loss = 66.111557
+ total_bbox = 5758676, rewritten_bbox = 4.860423 %
+
+ Tensor Cores are used.
+
+ 49372: 0.462940, 0.497342 avg loss, 0.000261 rate, 0.121806 seconds, 1579904 images, 0.364223 hours left
+OpenCV exception: draw_train_loss()
+Loaded: 0.000043 seconds
+v3 (iou loss, Normalizer: (iou: 0.07, cls: 1.00) Region 30 Avg (IOU: 0.0
+
+
+docker run -v C:\Users\ywei\Documents\Work\UTA\utcompare-vscimage:/workspaces/utcompare-vscimage --name test-yolo -it tartarus.hti-sys.com:5000/rdaly/utcompare-vscimage:1.0
+The system cannot find the file  C:\Program Files(x86)\Common Files\Merge Modules\Microsoft_VC120_CRT_x64.msm
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Redist\MSVC\14.28.29910\MergeModules\Microsoft_VC142_CRT_x64.msm
+
+docker context create ml-training --docker "host=ssh://hti@ut-training.hti-sys.com:22"
